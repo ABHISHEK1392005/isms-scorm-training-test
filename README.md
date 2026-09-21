@@ -1,4 +1,4 @@
-# SecureWise ISMS Cyber Security Challenge
+# ISMS-SCORM-TRAINING-TEST
 
 A gamified cybersecurity learning course developed as part of the SecureWise Phase 2 internship.
 
