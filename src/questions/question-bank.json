@@ -4,61 +4,7 @@
     "missionId": "M1",
     "objectiveId": "M1-O1",
     "type": "multiple-choice",
-    "prompt": "Which part of the CIA triad focuses on preventing unauthorized people from viewing information?",
-    "options": [
-      "Confidentiality",
-      "Integrity",
-      "Availability",
-      "Recovery"
-    ],
-    "correctAnswer": "Confidentiality",
-    "feedbackCorrect": "Correct. Confidentiality protects information from unauthorized access or disclosure.",
-    "feedbackIncorrect": "The correct answer is Confidentiality. It focuses on preventing unauthorized access or disclosure.",
-    "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
-  },
-  {
-    "id": "M1-Q02",
-    "missionId": "M1",
-    "objectiveId": "M1-O1",
-    "type": "classification",
-    "prompt": "A document contains sensitive employee information and is intended only for authorized staff. Which classification is most appropriate?",
-    "options": [
-      "Public",
-      "Internal",
-      "Confidential",
-      "Unclassified"
-    ],
-    "correctAnswer": "Confidential",
-    "feedbackCorrect": "Correct. Sensitive information intended only for authorized staff should receive stronger protection.",
-    "feedbackIncorrect": "The document contains sensitive information for authorized staff, so Confidential is the appropriate choice.",
-    "points": 5,
-    "source": "SecureWise Day 1 research; ISO/IEC 27001"
-  },
-  {
-    "id": "M1-Q03",
-    "missionId": "M1",
-    "objectiveId": "M1-O1",
-    "type": "multiple-choice",
-    "prompt": "A system must be available to authorized employees when they need it to perform their work. Which CIA property is involved?",
-    "options": [
-      "Confidentiality",
-      "Integrity",
-      "Availability",
-      "Classification"
-    ],
-    "correctAnswer": "Availability",
-    "feedbackCorrect": "Correct. Availability means authorized users can access information or systems when required.",
-    "feedbackIncorrect": "The correct answer is Availability because the situation concerns access when needed.",
-    "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
-  },
-  {
-    "id": "M1-Q04",
-    "missionId": "M1",
-    "objectiveId": "M1-O1",
-    "type": "multiple-choice",
-    "prompt": "An employee notices that an important report was changed without authorization. Which CIA property is primarily affected?",
+    "prompt": "Riya is preparing a monthly business report. The report will be published on the organization's public website after approval. Which CIA property is most directly concerned if unauthorized changes are made to the report before publication?",
     "options": [
       "Confidentiality",
       "Integrity",
@@ -66,297 +12,715 @@
       "Authentication"
     ],
     "correctAnswer": "Integrity",
-    "feedbackCorrect": "Correct. Integrity concerns keeping information accurate and protected from unauthorized modification.",
-    "feedbackIncorrect": "The issue is unauthorized modification, so Integrity is the affected CIA property.",
+    "correctAnswers": [
+      "Integrity"
+    ],
+    "feedbackCorrect": "Correct. Unauthorized changes can affect the accuracy and trustworthiness of information, which is an integrity concern.",
+    "feedbackIncorrect": "The key issue is unauthorized modification of the report. That primarily affects integrity because the information may no longer be accurate or trustworthy.",
+    "explanation": "Integrity protects information from unauthorized or improper modification and helps maintain its accuracy and trustworthiness.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Protect and related information-protection concepts; Course Day 1 research, CIA Triad section"
   },
+  {
+    "id": "M1-Q02",
+    "missionId": "M1",
+    "objectiveId": "M1-O1",
+    "type": "classification",
+    "prompt": "According to the classification policy used in this training course, an employee-information document is intended only for authorized staff and should not be shared publicly. Which classification should the learner assign?",
+    "options": [
+      "Public",
+      "Internal",
+      "Confidential"
+    ],
+    "correctAnswer": "Confidential",
+    "correctAnswers": [
+      "Confidential"
+    ],
+    "feedbackCorrect": "Correct. Under this course's training classification policy, sensitive employee information intended only for authorized staff is treated as Confidential.",
+    "feedbackIncorrect": "Under the training classification policy, sensitive employee information restricted to authorized staff should be classified as Confidential.",
+    "explanation": "The Public, Internal, and Confidential labels are the classification labels defined for this training exercise. They are course-policy labels and are not presented as terminology mandated by ISO/IEC 27001.",
+    "points": 5,
+    "difficulty": "medium",
+    "interactionConfig": {
+      "classificationMode": "card-selection",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true,
+      "policyBased": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "Course Day 1 research, Human Security and Information Handling sections; Course training classification policy"
+  },
+  {
+    "id": "M1-Q03",
+    "missionId": "M1",
+    "objectiveId": "M1-O1",
+    "type": "scenario-decision",
+    "prompt": "A team member says that a shared system must remain accessible to authorized employees during working hours. A service outage prevents employees from accessing the system. Which CIA property is primarily affected?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Classification"
+    ],
+    "correctAnswer": "Availability",
+    "correctAnswers": [
+      "Availability"
+    ],
+    "feedbackCorrect": "Correct. Availability concerns authorized users being able to access systems and information when they need them.",
+    "feedbackIncorrect": "The scenario is about authorized employees being unable to access the system when needed. That is primarily an availability concern.",
+    "explanation": "Availability means information and systems are accessible to authorized users when required.",
+    "points": 5,
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Protect function; Course Day 1 research, CIA Triad section"
+  },
+  {
+    "id": "M1-Q04",
+    "missionId": "M1",
+    "objectiveId": "M1-O1",
+    "type": "classification",
+    "prompt": "A project schedule contains routine work dates and task owners. It is intended for employees working on the project but is not approved for public release. Under the training classification policy, how should it be handled?",
+    "options": [
+      "Public",
+      "Internal",
+      "Confidential"
+    ],
+    "correctAnswer": "Internal",
+    "correctAnswers": [
+      "Internal"
+    ],
+    "feedbackCorrect": "Correct. The schedule is intended for workplace use but is not approved for public release, so the training policy classifies it as Internal.",
+    "feedbackIncorrect": "The schedule is not public, but it is also not described as highly sensitive employee information. Under the course policy, Internal is the appropriate classification.",
+    "explanation": "The course policy uses Internal for routine workplace information intended for authorized organizational use but not approved for public release.",
+    "points": 5,
+    "difficulty": "medium",
+    "interactionConfig": {
+      "classificationMode": "drag-or-select",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true,
+      "policyBased": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "Course Day 1 research, Information Handling section; Course training classification policy"
+  },
+
   {
     "id": "M2-Q01",
     "missionId": "M2",
     "objectiveId": "M2-O1",
-    "type": "multiple-choice",
-    "prompt": "An email asks you to urgently verify your account using a link. What should you do first?",
+    "type": "multi-select",
+    "prompt": "Riya receives an email saying, \"Your account will be suspended in 10 minutes unless you verify it now.\" The sender address contains an unfamiliar domain and the message includes a link asking her to sign in. Which indicators should she select as potential phishing warning signs?",
     "options": [
-      "Click the link immediately",
-      "Verify the sender and link using a trusted method",
-      "Reply with your password",
-      "Forward it to coworkers"
+      "Unexpected urgency",
+      "Unfamiliar sender/domain",
+      "Unexpected sign-in link",
+      "The message arrived during working hours",
+      "The request pressures the learner to act immediately"
     ],
-    "correctAnswer": "Verify the sender and link using a trusted method",
-    "feedbackCorrect": "Correct. Independent verification helps reduce the risk of following a phishing message.",
-    "feedbackIncorrect": "Do not click or share credentials before verifying the message through a trusted method.",
+    "correctAnswers": [
+      "Unexpected urgency",
+      "Unfamiliar sender/domain",
+      "Unexpected sign-in link",
+      "The request pressures the learner to act immediately"
+    ],
+    "feedbackCorrect": "Correct. The message combines urgency, an unfamiliar sender/domain, and an unexpected sign-in request. These indicators should trigger verification rather than immediate action.",
+    "feedbackIncorrect": "Review the message for indicators that create pressure or request unexpected account action. Working hours alone is not a phishing indicator.",
+    "explanation": "Phishing messages commonly use urgency, suspicious sender details, unexpected links, and pressure to act before the recipient can verify the request.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "multi",
+      "scoring": "all-or-nothing",
+      "requiredSelections": 4,
+      "partialCredit": false,
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Protect/awareness and training concepts; Course Day 1 research, Human Security section"
   },
   {
     "id": "M2-Q02",
     "missionId": "M2",
     "objectiveId": "M2-O1",
     "type": "scenario-decision",
-    "prompt": "You receive an unexpected attachment from an unfamiliar sender. What is the safest response?",
+    "prompt": "An unexpected email contains an attachment named \"Urgent_Payroll_Update.pdf.exe\" and asks you to open it immediately. You were not expecting a payroll message. What should you do?",
     "options": [
-      "Open it to see what it contains",
-      "Ignore the warning and download it",
-      "Avoid opening it and report or verify the message through the approved channel",
-      "Send it to another employee to test"
+      "Open the attachment because the filename appears to contain PDF",
+      "Rename the file and open it in order to inspect it",
+      "Do not open the attachment and use the approved reporting or verification process",
+      "Forward the attachment to a coworker and ask them to test it"
     ],
-    "correctAnswer": "Avoid opening it and report or verify the message through the approved channel",
-    "feedbackCorrect": "Correct. Unexpected attachments can be risky. Avoid opening them and use the approved reporting or verification process.",
-    "feedbackIncorrect": "Opening an unexpected attachment can expose the organization to risk. Use the approved reporting or verification process instead.",
+    "correctAnswer": "Do not open the attachment and use the approved reporting or verification process",
+    "correctAnswers": [
+      "Do not open the attachment and use the approved reporting or verification process"
+    ],
+    "feedbackCorrect": "Correct. The unexpected attachment, executable extension, and urgency create multiple warning signs. Do not open it; use the approved reporting or verification process.",
+    "feedbackIncorrect": "The attachment is unexpected and has a suspicious executable extension. Do not open or distribute it. Use the approved reporting or verification process.",
+    "explanation": "Unexpected attachments and pressure to act quickly can indicate phishing or malware delivery. Safe handling means avoiding the attachment and following the approved process.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "Course Day 1 research, Human Security section; NIST Cybersecurity Framework (CSF) 2.0, Protect-related awareness and training concepts"
   },
   {
     "id": "M2-Q03",
     "missionId": "M2",
     "objectiveId": "M2-O1",
-    "type": "multiple-choice",
-    "prompt": "Which combination is a common phishing warning sign?",
+    "type": "branching-decision",
+    "prompt": "You receive an email from a familiar-looking display name asking you to review a document through a link. You were not expecting the document. What should you do first?",
     "options": [
-      "Unexpected urgency and a suspicious link",
-      "A routine internal meeting reminder",
-      "A known contact using an approved system",
-      "A normal calendar invitation you expected"
+      "Click the link because the display name looks familiar",
+      "Verify the request using a trusted method before interacting with the link",
+      "Reply to the email with your password so the sender can confirm your identity",
+      "Forward the message to several coworkers without checking it"
     ],
-    "correctAnswer": "Unexpected urgency and a suspicious link",
-    "feedbackCorrect": "Correct. Unexpected urgency combined with a suspicious link is a common warning sign.",
-    "feedbackIncorrect": "Unexpected urgency and suspicious links are important phishing indicators to check.",
+    "correctAnswer": "Verify the request using a trusted method before interacting with the link",
+    "correctAnswers": [
+      "Verify the request using a trusted method before interacting with the link"
+    ],
+    "feedbackCorrect": "Correct. A familiar display name does not prove that the message is legitimate. Independent verification is safer before interacting with an unexpected link.",
+    "feedbackIncorrect": "A familiar display name can be misleading. The safer decision is to verify the unexpected request through a trusted method before using the link.",
+    "explanation": "The learner should distinguish appearance from verification. The scenario is designed to test whether the learner pauses and independently verifies an unexpected request.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "branching": {
+        "correctPath": "trusted-verification",
+        "unsafePaths": [
+          "click-link",
+          "share-credentials",
+          "forward-unverified"
+        ]
+      },
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "Course Day 1 research, Human Security section; NIST Cybersecurity Framework (CSF) 2.0, awareness and protective practices"
   },
   {
     "id": "M2-Q04",
     "missionId": "M2",
     "objectiveId": "M2-O1",
-    "type": "multiple-choice",
-    "prompt": "A message asks you to send your password by email to prevent account suspension. What should you do?",
+    "type": "scenario-decision",
+    "prompt": "A message claims to be from the IT team and asks you to reply with your password to prevent account suspension. The message uses an urgent tone. What is the safest response?",
     "options": [
-      "Send the password quickly",
-      "Reply asking for a different password",
-      "Do not send the password and report the suspicious request",
-      "Send only half of the password"
+      "Send the password because the sender claims to be IT",
+      "Send the password after changing it",
+      "Do not disclose the password and report or verify the request through the approved process",
+      "Reply with an incorrect password to test whether the sender notices"
     ],
-    "correctAnswer": "Do not send the password and report the suspicious request",
-    "feedbackCorrect": "Correct. Passwords should not be disclosed in response to suspicious requests.",
-    "feedbackIncorrect": "Do not disclose your password. Report the suspicious request through the approved channel.",
+    "correctAnswer": "Do not disclose the password and report or verify the request through the approved process",
+    "correctAnswers": [
+      "Do not disclose the password and report or verify the request through the approved process"
+    ],
+    "feedbackCorrect": "Correct. Credentials should not be disclosed in response to an unexpected request. Use the approved reporting or verification process.",
+    "feedbackIncorrect": "Do not disclose credentials to an unexpected requester. The safer action is to report or independently verify the request through the approved process.",
+    "explanation": "Urgency and requests for credentials are strong warning signs. The learner should avoid credential disclosure and use an approved security process.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "Course Day 1 research, Human Security section; NIST Cybersecurity Framework (CSF) 2.0, Protect-related awareness concepts"
   },
+
   {
     "id": "M3-Q01",
     "missionId": "M3",
     "objectiveId": "M3-O1",
-    "type": "multiple-choice",
-    "prompt": "Which password practice provides stronger protection?",
+    "type": "scenario-decision",
+    "prompt": "An employee has separate accounts for work email, development tools, and cloud services. A coworker suggests using the same password for all three accounts so it is easier to remember. What should the employee do?",
     "options": [
-      "Reuse one password everywhere",
-      "Use a strong unique password for each important account",
-      "Share passwords with coworkers",
-      "Write passwords in an open document"
+      "Use the same password because the accounts belong to the same employee",
+      "Use a unique strong password for each account and follow the organization's approved credential-management practice",
+      "Share one password with the coworker so both can remember it",
+      "Store all passwords in an unprotected text file on the desktop"
     ],
-    "correctAnswer": "Use a strong unique password for each important account",
-    "feedbackCorrect": "Correct. Unique strong passwords reduce the impact if one account credential is exposed.",
-    "feedbackIncorrect": "Reusing or sharing passwords increases security risk. Use strong unique passwords.",
+    "correctAnswer": "Use a unique strong password for each account and follow the organization's approved credential-management practice",
+    "correctAnswers": [
+      "Use a unique strong password for each account and follow the organization's approved credential-management practice"
+    ],
+    "feedbackCorrect": "Correct. Unique credentials reduce the chance that compromise of one account will directly expose other accounts.",
+    "feedbackIncorrect": "Reusing credentials increases the impact of a compromised password. Use unique strong passwords and the approved credential-management method.",
+    "explanation": "Unique credentials reduce credential reuse risk and limit the effect of a compromise affecting one account.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, identity and access-related protective practices; Course Day 1 research, Human Security section"
   },
   {
     "id": "M3-Q02",
     "missionId": "M3",
     "objectiveId": "M3-O1",
     "type": "multiple-choice",
-    "prompt": "What is the main purpose of multi-factor authentication?",
+    "prompt": "An employee receives an unexpected MFA approval request while sitting away from the computer and not attempting to sign in. Which action is safest?",
     "options": [
-      "To remove the need for passwords in every situation",
-      "To require additional evidence of identity beyond one authentication factor",
-      "To make accounts public",
-      "To share an account between employees"
+      "Approve the request so the repeated notifications stop",
+      "Ignore the request but approve another one if it appears again",
+      "Do not approve the request and report the unexpected authentication activity through the approved process",
+      "Send the approval code to a coworker for confirmation"
     ],
-    "correctAnswer": "To require additional evidence of identity beyond one authentication factor",
-    "feedbackCorrect": "Correct. MFA adds another authentication factor, providing additional protection for the account.",
-    "feedbackIncorrect": "MFA adds another factor or evidence of identity rather than making accounts public or shared.",
+    "correctAnswer": "Do not approve the request and report the unexpected authentication activity through the approved process",
+    "correctAnswers": [
+      "Do not approve the request and report the unexpected authentication activity through the approved process"
+    ],
+    "feedbackCorrect": "Correct. An unexpected authentication request should not be approved. The event should be handled through the approved security process.",
+    "feedbackIncorrect": "Do not approve unexpected authentication requests or share authentication information. Use the approved reporting process.",
+    "explanation": "Unexpected authentication requests can indicate an attempted account compromise. The safe response is to reject the unexpected request and report it appropriately.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, identity and access-related protective practices; Course Day 1 research, Human Security section"
   },
   {
     "id": "M3-Q03",
     "missionId": "M3",
     "objectiveId": "M3-O1",
     "type": "scenario-decision",
-    "prompt": "A coworker asks you to share your account password because they need urgent access. What should you do?",
+    "prompt": "A coworker says they urgently need access to a system and asks you to give them your password. They say their manager approved the work verbally. What should you do?",
     "options": [
-      "Share it because the request is urgent",
-      "Share it only once",
-      "Do not share the password and use the approved access process",
-      "Post it in the team chat"
+      "Share the password because the work is urgent",
+      "Share the password once and change it later",
+      "Do not share the password; direct the coworker to the approved access process",
+      "Send the password through a private message instead of email"
     ],
-    "correctAnswer": "Do not share the password and use the approved access process",
-    "feedbackCorrect": "Correct. Accounts should not be shared through password disclosure. Use the approved access process.",
-    "feedbackIncorrect": "Do not share credentials. The coworker should use the approved access or account process.",
+    "correctAnswer": "Do not share the password; direct the coworker to the approved access process",
+    "correctAnswers": [
+      "Do not share the password; direct the coworker to the approved access process"
+    ],
+    "feedbackCorrect": "Correct. Urgency does not make password sharing safe. Access should be provided through the approved process rather than credential disclosure.",
+    "feedbackIncorrect": "Changing the communication method does not make password sharing safe. The coworker should use the approved access process.",
+    "explanation": "Credentials should remain associated with the authorized account holder. Legitimate access requirements should be handled through approved access-management procedures.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "Course Day 1 research, Human Security section; NIST Cybersecurity Framework (CSF) 2.0, identity and access-related protective practices"
   },
   {
     "id": "M3-Q04",
     "missionId": "M3",
     "objectiveId": "M3-O1",
-    "type": "multiple-choice",
-    "prompt": "You receive an unexpected MFA approval request while you are not signing in. What should you do?",
+    "type": "branching-decision",
+    "prompt": "You receive an MFA request that you did not initiate. Select the response that should occur first, followed by the appropriate next action.",
     "options": [
-      "Approve it to make it stop",
-      "Ignore it and keep approving future requests",
-      "Do not approve it and report the unexpected request through the approved process",
-      "Share the approval code with a coworker"
+      "Approve the request → continue working → report only if the account stops working",
+      "Do not approve the request → follow the approved reporting or account-security process",
+      "Approve the request → change the password later → ignore the event",
+      "Share the request details and authentication code with a coworker → ask them what to do"
     ],
-    "correctAnswer": "Do not approve it and report the unexpected request through the approved process",
-    "feedbackCorrect": "Correct. An unexpected authentication request may indicate an attempted account compromise.",
-    "feedbackIncorrect": "Do not approve unexpected authentication requests. Report them through the approved process.",
+    "correctAnswer": "Do not approve the request → follow the approved reporting or account-security process",
+    "correctAnswers": [
+      "Do not approve the request → follow the approved reporting or account-security process"
+    ],
+    "feedbackCorrect": "Correct. The learner should first avoid approving an unexpected authentication request and then follow the approved security process.",
+    "feedbackIncorrect": "An unexpected MFA request should not be approved or shared. The safer sequence is to reject/avoid the unexpected request and use the approved security process.",
+    "explanation": "This branching scenario tests both immediate behavior and the correct follow-up action rather than testing MFA as a definition only.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "branching": {
+        "correctPath": [
+          "reject-unexpected-request",
+          "report-through-approved-process"
+        ],
+        "unsafePaths": [
+          "approve-request",
+          "ignore-event",
+          "share-authentication-information"
+        ]
+      },
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, identity and access-related protective practices; Course Day 1 research, Human Security section"
   },
+
   {
     "id": "M4-Q01",
     "missionId": "M4",
     "objectiveId": "M4-O1",
-    "type": "scenario-decision",
-    "prompt": "You notice suspicious activity on your work account that you did not perform. What should you do?",
+    "type": "branching-decision",
+    "prompt": "You notice a login to your work account from an unfamiliar location. You did not perform the login. What should you do?",
     "options": [
-      "Ignore it",
-      "Delete all related evidence",
-      "Follow the approved incident reporting process and preserve relevant evidence",
-      "Post details publicly"
+      "Ignore it because the account still works",
+      "Delete notifications and logs so nobody sees the event",
+      "Follow the approved incident-reporting process and preserve relevant information",
+      "Post a screenshot publicly to ask whether the login is suspicious"
     ],
-    "correctAnswer": "Follow the approved incident reporting process and preserve relevant evidence",
-    "feedbackCorrect": "Correct. Report suspected incidents through the approved channel and preserve relevant evidence.",
-    "feedbackIncorrect": "Do not ignore or destroy evidence. Follow the approved incident reporting process and preserve relevant information.",
+    "correctAnswer": "Follow the approved incident-reporting process and preserve relevant information",
+    "correctAnswers": [
+      "Follow the approved incident-reporting process and preserve relevant information"
+    ],
+    "feedbackCorrect": "Correct. Unexpected account activity should be treated as a potential security incident. Report it through the approved process and preserve relevant information.",
+    "feedbackIncorrect": "Do not hide, delete, or publicly distribute incident information. Use the approved reporting process and preserve relevant information.",
+    "explanation": "A suspected incident should be reported through the authorized process while relevant evidence is preserved for investigation.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "branching": {
+        "correctPath": "report-and-preserve",
+        "unsafePaths": [
+          "ignore",
+          "delete-evidence",
+          "public-disclosure"
+        ]
+      },
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Detect and Respond functions; Course Day 1 research, Human Security and Risk sections"
   },
   {
     "id": "M4-Q02",
     "missionId": "M4",
     "objectiveId": "M4-O1",
-    "type": "multiple-choice",
-    "prompt": "Why is preserving relevant evidence important during an incident?",
+    "type": "ordered-response",
+    "prompt": "You notice suspicious activity on a work account. Arrange the following actions in the safest general order.",
     "options": [
-      "It can help investigation and response",
-      "It makes the incident public",
-      "It removes the need to report the incident",
-      "It guarantees there was no incident"
+      "Recognize and note the suspicious activity",
+      "Avoid destroying or altering relevant evidence",
+      "Use the approved incident-reporting process",
+      "Provide relevant information to the authorized response team"
     ],
-    "correctAnswer": "It can help investigation and response",
-    "feedbackCorrect": "Correct. Relevant evidence can help authorized responders understand and investigate the incident.",
-    "feedbackIncorrect": "Preserving relevant evidence supports investigation and response; it does not replace reporting.",
+    "correctAnswers": [
+      "Recognize and note the suspicious activity",
+      "Avoid destroying or altering relevant evidence",
+      "Use the approved incident-reporting process",
+      "Provide relevant information to the authorized response team"
+    ],
+    "feedbackCorrect": "Correct. Recognize the event, avoid destroying relevant evidence, report through the approved process, and provide the necessary information to authorized responders.",
+    "feedbackIncorrect": "Review the response sequence. The learner should recognize the event, protect relevant evidence, report through the approved process, and then provide relevant information to authorized responders.",
+    "explanation": "The sequence emphasizes recognition, preservation of relevant information, authorized reporting, and support for the response process.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "orderingMode": "drag-and-drop-or-keyboard",
+      "scoring": "all-or-nothing",
+      "partialCredit": false,
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Detect and Respond functions; Course Day 1 research, Human Security section"
   },
   {
     "id": "M4-Q03",
     "missionId": "M4",
     "objectiveId": "M4-O1",
-    "type": "multiple-choice",
-    "prompt": "What is the correct general approach when you suspect a security incident?",
+    "type": "scenario-decision",
+    "prompt": "An employee accidentally sends a document containing sensitive information to the wrong recipient. The employee realizes the mistake immediately. What should the employee do next?",
     "options": [
-      "Hide it from the organization",
-      "Use the approved reporting channel",
-      "Discuss it only on social media",
-      "Wait until someone else reports it"
+      "Delete the sent message and keep the incident private",
+      "Forward the document to additional people to explain the mistake",
+      "Report the event through the approved incident process and follow the response instructions",
+      "Post the recipient's details publicly so others can identify the mistake"
     ],
-    "correctAnswer": "Use the approved reporting channel",
-    "feedbackCorrect": "Correct. Suspected incidents should be reported through the organization's approved process.",
-    "feedbackIncorrect": "The correct approach is to use the approved reporting channel so the issue can be handled appropriately.",
+    "correctAnswer": "Report the event through the approved incident process and follow the response instructions",
+    "correctAnswers": [
+      "Report the event through the approved incident process and follow the response instructions"
+    ],
+    "feedbackCorrect": "Correct. Accidental disclosure can be a security incident. Reporting it promptly allows the organization to assess and respond appropriately.",
+    "feedbackIncorrect": "Do not hide or spread the information further. Report the event through the approved incident process and follow the response instructions.",
+    "explanation": "Prompt reporting allows authorized responders to assess the event and determine appropriate containment or follow-up actions.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Respond-related concepts; Course Day 1 research, Human Security and Risk sections"
   },
   {
     "id": "M4-Q04",
     "missionId": "M4",
     "objectiveId": "M4-O1",
-    "type": "scenario-decision",
-    "prompt": "A colleague accidentally sends sensitive information to the wrong recipient. What should happen next?",
+    "type": "multiple-choice",
+    "prompt": "During a suspected incident, a colleague suggests deleting suspicious files and clearing activity records before reporting the issue. Why is this unsafe?",
     "options": [
-      "Delete the sent message and say nothing",
-      "Report the incident through the approved channel",
-      "Forward the information to more people",
-      "Post the mistake publicly"
+      "It may remove information that authorized responders could need for investigation",
+      "It guarantees the incident will become public",
+      "It automatically restores the affected account",
+      "It makes reporting unnecessary"
     ],
-    "correctAnswer": "Report the incident through the approved channel",
-    "feedbackCorrect": "Correct. The event should be reported through the approved process so the organization can assess and respond.",
-    "feedbackIncorrect": "Do not hide the event or spread the information. Report it through the approved incident process.",
+    "correctAnswer": "It may remove information that authorized responders could need for investigation",
+    "correctAnswers": [
+      "It may remove information that authorized responders could need for investigation"
+    ],
+    "feedbackCorrect": "Correct. Deleting or altering relevant information can interfere with investigation and response.",
+    "feedbackIncorrect": "The key issue is evidence preservation. Deleting or altering relevant information may make investigation and response more difficult.",
+    "explanation": "Preserving relevant evidence can help authorized responders understand what happened and determine appropriate response actions.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "medium",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false
+    },
+    "sourceReference": "NIST Cybersecurity Framework (CSF) 2.0, Detect and Respond functions; Course Day 1 research, Risk and Human Security sections"
   },
+
   {
     "id": "M5-Q01",
     "missionId": "M5",
     "objectiveId": "M5-O1",
-    "type": "scenario-decision",
-    "prompt": "You receive a suspicious email, notice an unusual login, and are unsure whether your account is affected. What is the safest overall response?",
+    "type": "branching-decision",
+    "prompt": "You are starting work and encounter four events: a suspicious email, a sensitive document, an unexpected MFA request, and unusual account activity. Which response sequence best applies the security practices learned in Missions 1 to 4?",
     "options": [
-      "Ignore all three signs",
-      "Click the email link to investigate",
-      "Use the approved security reporting process and follow safe verification steps",
-      "Share your password with a coworker"
+      "Click the email link → share the sensitive document → approve MFA → ignore the account activity",
+      "Verify the suspicious request safely → apply the training classification policy → reject the unexpected MFA request → report the suspicious account activity through the approved process",
+      "Forward the email to coworkers → label all information Public → approve MFA → delete account records",
+      "Ignore the email → send the sensitive document externally → share credentials → wait for someone else to report the activity"
     ],
-    "correctAnswer": "Use the approved security reporting process and follow safe verification steps",
-    "feedbackCorrect": "Correct. Safe verification and appropriate reporting help reduce risk and support incident handling.",
-    "feedbackIncorrect": "Do not investigate by clicking suspicious links or sharing credentials. Use safe verification and the approved reporting process.",
+    "correctAnswer": "Verify the suspicious request safely → apply the training classification policy → reject the unexpected MFA request → report the suspicious account activity through the approved process",
+    "correctAnswers": [
+      "Verify the suspicious request safely → apply the training classification policy → reject the unexpected MFA request → report the suspicious account activity through the approved process"
+    ],
+    "feedbackCorrect": "Correct. The response applies phishing awareness, information classification, secure authentication behavior, and incident reporting together.",
+    "feedbackIncorrect": "Review the four situations separately: verify suspicious requests safely, classify information according to the training policy, never approve unexpected authentication requests, and report suspected incidents through the approved process.",
+    "explanation": "This integrated scenario tests whether the learner can apply the core behaviors from Missions 1 to 4 together rather than recalling one isolated definition.",
     "points": 5,
-    "source": "NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "branching": {
+        "correctPath": [
+          "safe-phishing-verification",
+          "policy-based-classification",
+          "reject-unexpected-authentication",
+          "approved-incident-reporting"
+        ],
+        "unsafePaths": [
+          "unsafe-phishing-response",
+          "unsafe-information-sharing",
+          "unsafe-authentication",
+          "incident-non-reporting"
+        ]
+      },
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false,
+      "assessmentLevel": "final"
+    },
+    "sourceReference": "Course Day 1 research, CIA Triad, Human Security, Risk and SCORM sections; NIST Cybersecurity Framework (CSF) 2.0; Course training classification policy"
   },
   {
     "id": "M5-Q02",
     "missionId": "M5",
     "objectiveId": "M5-O1",
-    "type": "multiple-choice",
-    "prompt": "Which statement best describes continual improvement in an ISMS?",
+    "type": "multi-select",
+    "prompt": "A learner is reviewing the organization's security practices after several workplace events. Which actions demonstrate the continual-improvement mindset taught in this course?",
     "options": [
-      "Security is reviewed only after a major incident",
-      "Security practices are reviewed and improved as risks and needs change",
-      "Security policies never change",
-      "Only technical staff are responsible for security"
+      "Review what happened and identify lessons for future prevention",
+      "Update security practices when risks or organizational needs change",
+      "Ignore recurring issues because the original procedure already exists",
+      "Use lessons from incidents to improve awareness or controls",
+      "Treat security as a one-time activity completed after training"
     ],
-    "correctAnswer": "Security practices are reviewed and improved as risks and needs change",
-    "feedbackCorrect": "Correct. Continual improvement means reviewing security practices and making improvements as needed.",
-    "feedbackIncorrect": "An ISMS supports continual review and improvement rather than treating security as a one-time activity.",
+    "correctAnswers": [
+      "Review what happened and identify lessons for future prevention",
+      "Update security practices when risks or organizational needs change",
+      "Use lessons from incidents to improve awareness or controls"
+    ],
+    "feedbackCorrect": "Correct. Continual improvement involves reviewing experience, learning from events, and improving security practices as risks and needs change.",
+    "feedbackIncorrect": "The continual-improvement mindset involves learning from experience, responding to changing risks and needs, and improving security practices rather than treating security as a one-time activity.",
+    "explanation": "An ISMS supports a cycle of review and improvement rather than treating information security as a one-time implementation.",
     "points": 5,
-    "source": "ISO/IEC 27001; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "multi",
+      "scoring": "all-or-nothing",
+      "partialCredit": false,
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false,
+      "assessmentLevel": "final"
+    },
+    "sourceReference": "ISO/IEC 27001, Information security management system and continual-improvement concepts; Course Day 1 research, ISMS Overview section"
   },
   {
     "id": "M5-Q03",
     "missionId": "M5",
     "objectiveId": "M5-O1",
-    "type": "multiple-choice",
-    "prompt": "Which behavior best supports information security in the workplace?",
+    "type": "scenario-decision",
+    "prompt": "A new employee notices that coworkers sometimes share credentials when work is urgent and that suspicious emails are not always reported. Which action best applies the employee-security principles taught in this course?",
     "options": [
-      "Sharing credentials when work is urgent",
-      "Reporting suspicious activity and following security procedures",
-      "Ignoring security warnings",
-      "Using unknown links to save time"
+      "Follow the existing behavior because urgent work is more important than security",
+      "Share credentials only with trusted coworkers",
+      "Follow approved security procedures, avoid credential sharing, verify suspicious requests, and report security concerns",
+      "Ignore suspicious emails unless they cause an obvious incident"
     ],
-    "correctAnswer": "Reporting suspicious activity and following security procedures",
-    "feedbackCorrect": "Correct. Safe security behavior includes following procedures and reporting suspicious activity.",
-    "feedbackIncorrect": "Following security procedures and reporting suspicious activity are important employee responsibilities.",
+    "correctAnswer": "Follow approved security procedures, avoid credential sharing, verify suspicious requests, and report security concerns",
+    "correctAnswers": [
+      "Follow approved security procedures, avoid credential sharing, verify suspicious requests, and report security concerns"
+    ],
+    "feedbackCorrect": "Correct. Security behavior includes following procedures, protecting credentials, verifying suspicious requests, and reporting concerns.",
+    "feedbackIncorrect": "Urgency does not remove security responsibilities. The safer approach combines approved procedures, credential protection, verification, and reporting.",
+    "explanation": "This scenario connects human security behavior with the practical decisions covered across the earlier missions.",
     "points": 5,
-    "source": "ISO/IEC 27001; NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "selectionMode": "single",
+      "scoring": "all-or-nothing",
+      "keyboardAccessible": true
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false,
+      "assessmentLevel": "final"
+    },
+    "sourceReference": "Course Day 1 research, Human Security section; NIST Cybersecurity Framework (CSF) 2.0, awareness and protective practices"
   },
   {
     "id": "M5-Q04",
     "missionId": "M5",
     "objectiveId": "M5-O1",
-    "type": "scenario-decision",
-    "prompt": "Which action shows the strongest overall security behavior?",
+    "type": "ordered-response",
+    "prompt": "A learner receives a suspicious email, notices an unexpected MFA request, and then sees unfamiliar account activity. Arrange the response actions in the safest general sequence.",
     "options": [
-      "Act quickly without verification",
-      "Protect information, verify suspicious requests, use secure authentication, and report incidents",
-      "Ignore security rules unless a manager is watching",
-      "Share sensitive information when asked by email"
+      "Avoid interacting with the suspicious email or link and verify/report it through the approved process",
+      "Do not approve the unexpected MFA request",
+      "Report the suspicious account activity through the approved incident process",
+      "Preserve relevant information and provide it to authorized responders"
     ],
-    "correctAnswer": "Protect information, verify suspicious requests, use secure authentication, and report incidents",
-    "feedbackCorrect": "Correct. Strong security behavior combines safe information handling, verification, secure authentication, and appropriate reporting.",
-    "feedbackIncorrect": "Good security behavior combines safe information handling, verification, secure authentication, and incident reporting.",
+    "correctAnswers": [
+      "Avoid interacting with the suspicious email or link and verify/report it through the approved process",
+      "Do not approve the unexpected MFA request",
+      "Report the suspicious account activity through the approved incident process",
+      "Preserve relevant information and provide it to authorized responders"
+    ],
+    "feedbackCorrect": "Correct. The sequence combines phishing-safe behavior, secure authentication behavior, incident reporting, and evidence preservation.",
+    "feedbackIncorrect": "Review the sequence across the four concepts: avoid the suspicious email interaction, reject the unexpected authentication request, report suspicious account activity, and preserve relevant information for authorized responders.",
+    "explanation": "The final assessment requires the learner to integrate the major behaviors taught throughout the course into a coherent workplace response.",
     "points": 5,
-    "source": "ISO/IEC 27001; NIST Cybersecurity Framework (CSF) 2.0; SecureWise Day 1 research"
+    "difficulty": "hard",
+    "interactionConfig": {
+      "orderingMode": "drag-and-drop-or-keyboard",
+      "scoring": "all-or-nothing",
+      "partialCredit": false,
+      "keyboardAccessible": true,
+      "assessmentLevel": "final"
+    },
+    "attemptPolicy": {
+      "maxAttempts": 2,
+      "scoreRetention": "highest-valid-score",
+      "duplicatePointsAllowed": false,
+      "assessmentLevel": "final"
+    },
+    "sourceReference": "Course Day 1 research, Human Security, Risk and SCORM sections; NIST Cybersecurity Framework (CSF) 2.0; Course training classification and incident-response policies"
   }
 ]
