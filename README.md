@@ -1,6 +1,6 @@
 # ISMS-SCORM-TRAINING-TEST
 
-A gamified cybersecurity learning course developed as part of the SecureWise Phase 2 internship.
+A gamified cybersecurity learning course developed as part of my internship Phase 2 submission.
 
 The project focuses on basic Information Security Management System (ISMS) concepts and turns them into short, interactive workplace scenarios. The final course will be delivered as a SCORM 1.2 package so that it can be launched from an LMS and track learner progress, score, completion status, and resume state.
 
@@ -83,7 +83,7 @@ The learner's saved state will be restored when the course is relaunched.
 The project will be developed gradually according to the Phase 2 implementation plan.
 
 ```text
-securewise-isms-scorm-game/
+isms-scorm-training-test/
 ├── docs/
 │   ├── 01-research/
 │   ├── 02-design/
