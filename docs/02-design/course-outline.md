@@ -6,13 +6,13 @@
 
 ISMS Cyber Security Challenge Level 1 is a browser-based gamified learning course designed to help general employees and new joiners understand basic information security concepts and apply safe security behavior in common workplace situations.
 
-The course uses short lessons, workplace scenarios, learner decisions, immediate feedback, scoring, progress tracking, badges, and a final assessment.
+The course uses short lessons, workplace scenarios, learner decisions, immediate feedback, scoring, progress tracking, badges, and an integrated final assessment within Mission 5.
 
 The course is designed as a SCORM 1.2 single SCO and will later be connected to an LMS for score, completion, status, and resume tracking.
 
 ### 2. Target Audience
 
-The target audience is general employees and new joiners who need a basic understanding of information security responsibilities and safe workplace behavior.
+The target audience is general employees and new joiners who need a basic understanding of information security responsibilities and safe security behavior.
 
 The course does not require an advanced technical or cybersecurity background. Concepts will be presented using simple language and realistic workplace situations.
 
@@ -24,15 +24,25 @@ Estimated seat time: 15 to 25 minutes.
 
 The course contains five required missions.
 
-All required missions must be completed and the final assessment must be submitted for course completion.
+Mission 5 — Become an ISMS Champion — is the integrated final assessment. It is the fifth and final assessed stage of the course.
+
+There is no separate sixth assessment after Mission 5.
+
+All five required missions must be completed, and Mission 5 must be submitted as the final assessment for course completion.
 
 The maximum course score is 100 points.
 
 Each mission has a maximum score of 20 points.
 
+Mission 1 contributes up to 20 points.
+Mission 2 contributes up to 20 points.
+Mission 3 contributes up to 20 points.
+Mission 4 contributes up to 20 points.
+Mission 5, which is the integrated final assessment, contributes up to 20 points.
+
 A score of 80 out of 100 is required to pass the course.
 
-The final result will be calculated from the learner's recorded answers and mission scores.
+The final result is calculated from the learner's recorded answers and mission scores after Mission 5 is submitted.
 
 ### 5. Learning Objectives
 
@@ -104,9 +114,13 @@ Maximum score: 20 points.
 
 Topic: Integrated final assessment.
 
-Learning focus: Applying ISMS and workplace security concepts to realistic decisions.
+Learning focus: Applying ISMS and workplace security concepts from Missions 1 to 4 to realistic workplace decisions.
+
+Assessment role: Mission 5 is the fifth and final assessed stage of the course. It serves as the integrated final assessment.
 
 Maximum score: 20 points.
+
+There is no separate assessed stage after Mission 5.
 
 ### 7. Required Learning Pattern
 
@@ -122,17 +136,18 @@ Each mission will follow a consistent learning pattern:
 
 ### 8. Proposed Learner Flow
 
-Welcome  
-→ Mission Dashboard  
-→ Mission Introduction  
-→ Learning Content  
-→ Interactive Challenge  
-→ Learner Decision  
-→ Immediate Feedback  
-→ Mission Result  
-→ Next Mission  
-→ Final Assessment  
-→ Final Results  
+Welcome
+→ Mission Dashboard
+→ Mission Introduction
+→ Learning Content
+→ Interactive Challenge
+→ Learner Decision
+→ Immediate Feedback
+→ Mission Result
+→ Next Mission
+→ Repeat through Mission 4
+→ Mission 5 — Integrated Final Assessment
+→ Final Results
 → Exit
 
 ### 9. Gamification Rules
@@ -141,13 +156,19 @@ Course maximum score: 100 points.
 
 Maximum mission score: 20 points.
 
-Progress: Based on completion of required missions rather than simply visiting screens.
+Each of the five missions contributes a maximum of 20 points.
 
-Retry: Allowed according to the defined retry policy. Retries must not create duplicate points or increase the score beyond the mission maximum.
+Mission 5 is the integrated final assessment and is the fifth and final assessed stage.
 
-Feedback: Immediate and explanatory for correct and incorrect choices.
+There is no separate sixth assessment and no additional assessment score after Mission 5.
 
-Final result: Calculated from recorded learner answers and mission scores.
+Progress is based on completion of required missions rather than simply visiting screens.
+
+Retry is allowed according to the defined retry policy. Retries must not create duplicate points or increase the score beyond the mission maximum.
+
+Feedback is immediate and explanatory for correct and incorrect choices.
+
+The final result is calculated from recorded learner answers and mission scores after Mission 5 is submitted.
 
 ### 10. Badge Rules
 
@@ -176,7 +197,11 @@ The course will maintain learner state including:
 - Mission scores
 - Recorded answers
 - Earned badges
-- Final assessment submission state
+- Mission 5 assessment submission state
+
+Mission 5 assessment submission is the final assessment submission for the course.
+
+The course will not create a separate sixth assessment state or additional assessment score.
 
 The learner state will later be prepared for SCORM resume support so that actual learner progress can be restored when the course is relaunched.
 
