@@ -35,14 +35,18 @@ The maximum course score is 100 points.
 Each mission has a maximum score of 20 points.
 
 Mission 1 contributes up to 20 points.
+
 Mission 2 contributes up to 20 points.
+
 Mission 3 contributes up to 20 points.
+
 Mission 4 contributes up to 20 points.
+
 Mission 5, which is the integrated final assessment, contributes up to 20 points.
 
 A score of 80 out of 100 is required to pass the course.
 
-The final result is calculated from the learner's recorded answers and mission scores after Mission 5 is submitted.
+The final result is calculated from the learner's recorded answers and retained mission scores after Mission 5 is submitted.
 
 ### 5. Learning Objectives
 
@@ -164,13 +168,47 @@ There is no separate sixth assessment and no additional assessment score after M
 
 Progress is based on completion of required missions rather than simply visiting screens.
 
-Retry is allowed according to the defined retry policy. Retries must not create duplicate points or increase the score beyond the mission maximum.
+Retry is allowed according to the defined retry policy.
 
 Feedback is immediate and explanatory for correct and incorrect choices.
 
-The final result is calculated from recorded learner answers and mission scores after Mission 5 is submitted.
+The final result is calculated from recorded learner answers and retained mission scores after Mission 5 is submitted.
 
-### 10. Badge Rules
+### 10. Retry Policy
+
+Each assessed challenge in Missions 1 to 4 allows a maximum of two attempts.
+
+Mission 5, which is the integrated final assessment, is governed by its separate final-assessment retake rule defined below.
+
+For Missions 1 to 4, the highest valid score achieved for each assessed challenge is retained.
+
+If a learner earns points on an earlier attempt and scores lower on a retry, the higher score is retained.
+
+Retry attempts never create duplicate points.
+
+A challenge worth 5 points can contribute a maximum of 5 points to the mission score, regardless of the number of attempts.
+
+Each mission has a maximum score of 20 points, and the course has a maximum score of 100 points.
+
+Earned badges are retained and are not duplicated or removed because of a later retry. A badge is awarded only when its defined achievement condition is satisfied.
+
+The Data Guardian badge requires the information classification challenge to be completed without an incorrect response.
+
+Mission 5 is the integrated final assessment and allows a maximum of two complete assessment attempts.
+
+Each Mission 5 attempt is treated as a complete assessment submission.
+
+The highest valid Mission 5 assessment score is retained.
+
+If the learner achieves a final course score of 80 or above after the first Mission 5 submission and all five missions are complete, no further Mission 5 attempt is required.
+
+If the learner's final course score is below 80, one additional Mission 5 attempt is available.
+
+After the available Mission 5 attempts are completed, the highest valid Mission 5 score is retained and the final course result is calculated.
+
+The final course result requires all five missions to be completed and a retained final score of at least 80 points to pass.
+
+### 11. Badge Rules
 
 #### Phishing Spotter
 
@@ -186,9 +224,9 @@ Awarded when the learner selects the correct incident response sequence.
 
 #### ISMS Champion
 
-Awarded when the learner completes all required missions and achieves a score of at least 80.
+Awarded when the learner completes all required missions and achieves a retained final course score of at least 80.
 
-### 11. Course State
+### 12. Course State
 
 The course will maintain learner state including:
 
@@ -196,6 +234,8 @@ The course will maintain learner state including:
 - Completed missions
 - Mission scores
 - Recorded answers
+- Attempt counts
+- Retained scores
 - Earned badges
 - Mission 5 assessment submission state
 
@@ -205,7 +245,7 @@ The course will not create a separate sixth assessment state or additional asses
 
 The learner state will later be prepared for SCORM resume support so that actual learner progress can be restored when the course is relaunched.
 
-### 12. Content and Scenario Rules
+### 13. Content and Scenario Rules
 
 All workplace scenarios will use fictional people, organizations, email addresses, and data.
 
@@ -213,7 +253,7 @@ Learning content, game mechanics, and SCORM communication will be kept as separa
 
 The course will focus on practical security decisions rather than advanced technical cybersecurity concepts.
 
-### 13. Course Success Criteria
+### 14. Course Success Criteria
 
 The learner should finish the course with a basic understanding of:
 
@@ -226,9 +266,9 @@ The learner should finish the course with a basic understanding of:
 
 The course should also allow the learner to practice these concepts through realistic workplace decisions and receive immediate feedback on their choices.
 
-### 14. References
+### 15. References
 
-1. SecureWise, Phase 2 ISMS SCORM Gamified Content Development — Intern Implementation Handbook.
+1. Phase 2 ISMS SCORM Gamified Content Development — Intern Implementation Handbook.
 2. ADL, SCORM 1.2 Documentation.
 3. ISO/IEC 27001, Information Security Management Systems.
 4. NIST, Cybersecurity Framework (CSF) 2.0.
