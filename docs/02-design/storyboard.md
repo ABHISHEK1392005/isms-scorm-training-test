@@ -165,11 +165,19 @@ Incorrect response:
 
 Retry:
 
-If the challenge allows retry, the learner can retry according to the documented retry policy. Retries must not create duplicate points.
+Each assessed challenge in Missions 1 to 4 allows a maximum of two attempts.
+
+The highest valid score achieved for the challenge is retained.
+
+If the learner scores lower on a retry, the previously retained higher score remains.
+
+Retry attempts never create duplicate points.
+
+The challenge score cannot exceed its defined point value or cause the mission score to exceed 20 points.
 
 State:
 
-The recorded answer, attempt result, and earned score are updated according to the scoring and retry rules.
+The recorded answer, attempt count, attempt result, retained score, earned score, and mission state are updated according to the scoring and retry rules.
 
 Next screen:
 
@@ -497,6 +505,22 @@ The Mission 5 score cannot exceed 20 points.
 
 There is no separate assessment score after Mission 5.
 
+Retry:
+
+Mission 5 is the integrated final assessment and allows a maximum of two complete assessment attempts.
+
+Each Mission 5 attempt is treated as a complete assessment submission.
+
+The highest valid Mission 5 assessment score is retained.
+
+If the learner achieves a final course score of 80 or above after the first Mission 5 submission and all five missions are complete, no further Mission 5 attempt is required.
+
+If the learner's final course score is below 80, one additional Mission 5 attempt is available.
+
+A retry cannot increase the Mission 5 score beyond 20 points or create duplicate points.
+
+After the available Mission 5 attempts are completed, the highest valid Mission 5 score is retained for the final course result.
+
 State change:
 
 When the learner submits Mission 5:
@@ -504,9 +528,11 @@ When the learner submits Mission 5:
 - Mission 5 answers are recorded.
 - Mission 5 score is recorded.
 - Mission 5 assessment submission state becomes true.
+- Mission 5 attempt count is recorded.
+- The retained Mission 5 score is recorded.
 - All completed mission states are retained.
 - Earned badges are retained.
-- The final course result is calculated from the recorded learner state.
+- The final course result is calculated from the retained mission scores.
 
 Next screen:
 
@@ -532,13 +558,14 @@ Learner sees:
 Rules:
 
 - Score of 80 or above passes.
-- Score below 80 fails after Mission 5 is submitted.
+- Score below 80 fails after all available Mission 5 attempts have been completed.
 - Completion requires all five required missions and submission of Mission 5.
 - Mission 5 is the final assessment.
 - There is no separate assessment after Mission 5.
-- The final result is calculated from the recorded learner answers and mission scores.
+- The final result is calculated from the retained scores for all five missions.
 - The Final Results screen displays the result but does not award additional points.
-
+- If Mission 5 was retried, the highest valid Mission 5 score is used in the final result.
+  
 State:
 
 The final score, completion status, pass or fail result, completed missions, and earned badges are retained as part of the learner state.
@@ -645,6 +672,8 @@ Course UI state will maintain:
 - Mission scores
 - Earned badges
 - Mission 5 assessment submission state
+- Attempt counts
+- Retained scores
 
 Mission completion is based on actual required learner actions rather than simply visiting screens.
 
