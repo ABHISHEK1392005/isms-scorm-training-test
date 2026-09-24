@@ -4,11 +4,12 @@
 
 This document maps each course learning objective to the assessment questions designed to measure it.
 
-The mapping ensures that every mission objective is assessed through relevant scenario-based questions and that the question bank remains aligned with the course design.
+The mapping ensures that every mission objective is assessed through relevant questions and that the question bank remains aligned with the course design.
 
 ## Mission 1 — Protect the Information
 
 ### M1-O1
+
 Classify workplace information and recognize confidentiality, integrity, and availability requirements.
 
 | Question ID | Assessment Focus | Interaction Type |
@@ -21,6 +22,7 @@ Classify workplace information and recognize confidentiality, integrity, and ava
 ## Mission 2 — Spot the Phishing Attack
 
 ### M2-O1
+
 Identify phishing indicators and select safe responses to suspicious messages.
 
 | Question ID | Assessment Focus | Interaction Type |
@@ -33,18 +35,20 @@ Identify phishing indicators and select safe responses to suspicious messages.
 ## Mission 3 — Secure Your Digital Identity
 
 ### M3-O1
+
 Apply secure password and authentication practices, including appropriate use of MFA.
 
 | Question ID | Assessment Focus | Interaction Type |
 |---|---|---|
 | M3-Q01 | Apply unique-password practices to a workplace scenario | Scenario Decision |
-| M3-Q02 | Respond safely to an unexpected MFA request | Scenario Decision |
+| M3-Q02 | Understand the purpose of multi-factor authentication | Multiple Choice |
 | M3-Q03 | Apply the rule that passwords and authentication secrets must not be shared | Scenario Decision |
-| M3-Q04 | Select the correct response sequence for an unexpected MFA request | Branching Decision |
+| M3-Q04 | Select the correct response to an unexpected MFA request | Branching Decision |
 
 ## Mission 4 — Handle a Security Incident
 
 ### M4-O1
+
 Recognize a potential security incident, take immediate protective action, preserve relevant evidence, and report it correctly.
 
 | Question ID | Assessment Focus | Interaction Type |
@@ -52,11 +56,12 @@ Recognize a potential security incident, take immediate protective action, prese
 | M4-Q01 | Recognize and respond to suspicious account activity | Branching Decision |
 | M4-Q02 | Put immediate incident-response actions in the correct order | Ordered Response |
 | M4-Q03 | Recognize and report a misdirected sensitive email | Scenario Decision |
-| M4-Q04 | Preserve relevant evidence while responding to a security incident | Scenario Decision |
+| M4-Q04 | Explain why relevant evidence should be preserved during an incident | Multiple Choice |
 
 ## Mission 5 — Become an ISMS Champion
 
 ### M5-O1
+
 Apply concepts from the previous missions to realistic workplace security decisions.
 
 | Question ID | Assessment Focus | Interaction Type |
